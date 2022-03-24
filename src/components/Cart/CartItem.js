@@ -25,18 +25,15 @@ function CartItem({ i }) {
         2
       )}`}</td>
       <td>
-        <BsDashCircle
-          className={styles.sign}
-          onClick={() => subtractCartItem(i)}
-        />
-        <BsPlusCircle
-          className={styles.sign}
-          onClick={() => addItemToCart(i)}
-        />
-        <BsTrash
-          className={styles.sign_delete}
-          onClick={() => removeItemFromCart(i)}
-        />
+        <button onClick={() => subtractCartItem(i)}>
+          <BsDashCircle className={styles.sign} />
+        </button>
+        <button onClick={() => addItemToCart(i)}>
+          <BsPlusCircle className={styles.sign} />
+        </button>
+        <button onClick={() => removeItemFromCart(i)}>
+          <BsTrash className={styles.sign_delete} />
+        </button>
       </td>
     </tr>
   );

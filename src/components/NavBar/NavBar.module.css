@@ -3,19 +3,19 @@
   display: inline-block;
   padding: 10px;
   font-size: 1.5rem;
-  color: #4d4637;
+  color: #36332c;
   font-weight: 600;
 }
 
 .active {
   composes: link;
-  color: #b9aa87;
+  color: #978b6f;
 }
 
 .link:hover {
-  color: #4d4637;
+  color: #36332c;
 }
 
 .active:hover {
-  color: #b9aa87;
+  color: #978b6f;
 }

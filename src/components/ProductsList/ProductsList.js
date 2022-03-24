@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import ProductsListItem from "./ProductsListItem";
 import context from "../../context/appContext";
 import ProductsListTable from "./ProductsListTable";
+import Error from "./Error";
 import styles from "./ProductsList.module.css";
 
 function ProductsList() {
@@ -71,7 +72,11 @@ function ProductsList() {
 
   return (
     <div className={styles.products}>
-      <ProductsListTable properties={properties} />
+      {products.length > 0 ? (
+        <ProductsListTable properties={properties} />
+      ) : (
+        <Error />
+      )}
     </div>
   );
 }

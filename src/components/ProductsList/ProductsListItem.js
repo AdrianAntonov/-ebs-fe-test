@@ -15,19 +15,16 @@ function ProductsListItem({ item: { id, name, category, price } }) {
       <td>{name}</td>
       <td>{`$${price}`}</td>
       <td>
-        <BsDashCircle
-          className={styles.sign}
-          onClick={() => subtractCartItem(id)}
-        />
-        <BsPlusCircle
-          className={styles.sign}
-          onClick={() => addItemToCart(id)}
-        />
+        <button onClick={() => subtractCartItem(id)}>
+          <BsDashCircle className={styles.sign} />
+        </button>
+        <button onClick={() => addItemToCart(id)}>
+          <BsPlusCircle className={styles.sign} />
+        </button>
 
-        <BsTrash
-          className={styles.sign_delete}
-          onClick={() => removeItemFromCart(id)}
-        />
+        <button onClick={() => removeItemFromCart(id)}>
+          <BsTrash className={styles.sign_delete} />
+        </button>
       </td>
     </tr>
   );

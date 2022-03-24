@@ -1,0 +1,23 @@
+.text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4d4637;
+}
+
+.sign {
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 20px;
+  height: 20px;
+}
+
+.sign_delete {
+  composes: sign;
+  color: tomato;
+}
+
+.sign:active {
+  transform: scale(0.5);
+}

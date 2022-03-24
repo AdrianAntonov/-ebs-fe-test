@@ -1,0 +1,16 @@
+body {
+  background-color: #f8f8ff;
+}
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 
+#FFFAF0
+#4D4637
+#B9AA87
+#DBFFFA
+#A4CAC2
+*/
+}
